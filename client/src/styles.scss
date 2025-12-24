@@ -11,11 +11,15 @@
 // Customize the entire app. Change :root to your selector if you want to scope the styles.
 :root {
   @include mat.badge-overrides((
-    background-color: blue
+    background-color: #7d00fa
   ));
 }
 
 
-.match-input-height {
+button.match-input-height {
   height: var(--mat-form-field-container-height) !important;
+}
+
+.mdc-notched-outline__notch {
+  border-right-style: none !important;
 }
