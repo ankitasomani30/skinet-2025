@@ -1,7 +1,11 @@
-@import "tailwindcss";
+@import "tailwindcss" important;
 
 @layer components {
     .container {
-        @apply mx-5 max-w-screen-2xl;
+        @apply mx-auto max-w-screen-2xl;
+    }
+
+    .text-primary {
+        @apply text-blue-700
     }
 }
