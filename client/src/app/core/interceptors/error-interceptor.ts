@@ -28,7 +28,7 @@ export const errorInterceptor: HttpInterceptorFn = (req, next) => {
       }
       if(err.status === 401)
       {
-        snackbar.error(err.error.title || err.error);
+        snackbar.error(err.error?.title || err.error || 'Unauthorized');
       }
       if(err.status === 404)
       {
